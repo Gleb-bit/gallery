@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 from accounts.models import User
 from accounts.serializers.email import ChangeEmailSerializer, ChangeEmailConfirmSerializer, \
-    EmailVerifySerializer, RequestEmailVerifySerializer, ResendVerificationCodeSerializer
+    EmailVerifySerializer, RequestEmailVerifySerializer
 from accounts.services import generate_code
 from gallery_and_user.utils import DefaultSerializer, Util
 
