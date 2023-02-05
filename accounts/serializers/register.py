@@ -39,8 +39,6 @@ class RegisterSerializer(serializers.ModelSerializer):
 
         user.status = User.Status.REGISTERED
         user.save()
-        print(user.username, password)
-        print('user', authenticate(username=user.username, password=password))
 
         return user
 

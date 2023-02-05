@@ -77,7 +77,6 @@ class RecoverPasswordSerializer(serializers.Serializer):
         user.temp.password_recover_key = None
         user.temp.password_recover_key_expires = None
         user.temp.save()
-        print('password', user, new_password)
         user.set_password(new_password)
         user.save()
         return user
