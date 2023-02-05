@@ -13,7 +13,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     avatar = serializers.ImageField(required=False)
 
-    pictures = PictureSerializer(required=True, many=True)
+    pictures = PictureSerializer(required=False, many=True)
 
     class Meta:
         model = User
